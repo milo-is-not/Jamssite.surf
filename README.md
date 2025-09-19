@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
   <title>Jam's Site</title>
   <style>
     body {
@@ -111,11 +112,11 @@
 
     <div class="nav">
       <a href="about.html">
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAMAAAAL34HQAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABEUExURUdwTP///////////////////////////////////////////////////////////////+4eD2kAAAAXdFJOUwCQo2EHzkwmo7aXstixCz/8+0sAAAGzSURBVHja7ZvbUoMgDIajVcxgB8r+/9cm20gkW4x4pTlfRzUOIsuDN25SnQAAAAAAAAAAAAD8VRWcT9ZQtTxS+oC7SPlEm6xN41n83ciUspFPz1fmlLpcFfD7KzrnGnlpJAvngsri3JqgVq3cOBLsx6+rDn8XLOqzKk9XMfd3HHR+RoU3+0rYYrj48zwd3YvfXprPeK6DcYctMZ5nLKjtvcaVgr9qKzWqlpNn3ZDFpZcPqO9LoTe+yq76nS9TsV2q0Mf64e3EPCqDLmpnSz3LYvtLvGiU1LgxWrraXt2qPYbbo07dA+1uw+JhE0V/ViMi1aoXtPppZ5R07p9JmbHZfR6riV5lj5Gr1F/tcvVcvzKi8t+fUxeJNNF1ov0FR0ck9qpLK33I2HtVtK2mq1ss+7U7sWJwe6NvdE61hU4y5apdY6J2NUuYvsivcVksvmWZqE4dnLfIn6p37V1uFzNSd25JRH2xTZc3fTj6dwMbz7L5TO5WqNOcX3zrGtSZ+W2rE/tn++CVq/Z+63DjF4U2j08zDKrnvkmtyWtNRbTiut1D/hYdfav2dFh7dj/d1tmz5Vwr0TLnp9RWj36VdOKKZ6m8HgW2k3W53+VMeDbR9yYP79pXDYof9sON0yhv4qPyPZgK/wfgcAAAAAAAAAAADg5P4ApYyAbmwlVg8AAAAASUVORK5CYII=" alt="About Me">
+        <img src="computer.png" alt="About Me">
         <span>About Me</span>
       </a>
       <a href="art.html">
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAMAAAAL34HQAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABkUExURUdwTP///////////////////////////////////////////////////////////////+np6dvb2+Pj4/j4+Ojo6Obm5ujo6OXl5eLi4uTk5Orq6u/v79ra2t7e3uDg4O3t7dfX1+bm5vHx8f39/fj4+Onp6evr6+3t7e7u7uzs7PDw8Onp6e/v79zc3PX19e7u7u7u7u/v7+vr6/X19fX19dvb26jweNwAAAGdSURBVHja7ZrbkoMgDEZzAtEKNEBB7pD1v79NO1AG6Z4sA9P+GGl9l1PzomKqu3h+3oL0o4c8ebqgUgAAAAAAAAAAAAAAnuETtwMUtR+XtQn6OJnvnRW7F3KXM8+SU+8exyUf0N+lP6MNl6uFdZ1hrVYurUpWbV94csFFMdx6q6orWSbWlTd/YGi1VxtiM1nGeE/Zx9US6OlbsmpjCtsrPqihNVddQ9u1V60jK4cSmHb0rFaoa9pYVqX9M4FbPVb2yXUmk9Vi+/4eFWnP3Zqg0q9PpYyZC6nxkqMvsVPgkn8ZHbW6umUfP9nVSGn/ME9LKZnWlWJqHx7Xp2r6XOiQxXjXfqZjXbdoZdP1bbW3l8H3thD1sdd/ZdaXGdUsVtN59UfHXlUy+snL3VmfJ3xI1W0d2vB5qOfS4Oe68saifkLeD+Rj8c0fks/6Xg3cPTf3k6uKDNH+dQJqCe2VV2UAAAAASUVORK5CYII=" alt="Art Work">
+        <img src="paint.png" alt="Art Work">
         <span>Art Work</span>
       </a>
     </div>
