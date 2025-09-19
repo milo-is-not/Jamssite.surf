@@ -85,20 +85,6 @@ h1 {
   padding: 20px;
   margin-top: 100px;
   border: 3px solid #f00;
-  animation: flash 1s infinite alternate,
-             scrollText 5s linear infinite;
-}
-
-@keyframes flash {
-  0%   { color: #ff0; box-shadow: 0 0 5px #ff0; }
-  50%  { color: #0ff; box-shadow: 0 0 15px #0ff; }
-  100% { color: #f0f; box-shadow: 0 0 25px #f0f; }
-}
-
-@keyframes scrollText {
-  0%   { transform: translateY(0); }
-  50%  { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
 }
 
 /* === Footer === */
