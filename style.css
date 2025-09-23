@@ -92,6 +92,21 @@ h1 {
   text-shadow: 1px 1px #000000;
 }
 
+/* === About Page Photos === */
+.about-photos {
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.about-photos img {
+  width: 180px;
+  height: auto;
+  border: 3px solid #00ff00;
+}
+
 /* === Sidebar Ads === */
 .ad {
   width: 200px;
