@@ -12,24 +12,24 @@ body {
 
 /* Home */
 body.home {
-  background: url('images/home-bg.png') repeat;
+  background: url('home-bg.png') repeat;
 }
 
 /* About */
 body.about {
-  background: url('images/about-bg.png') repeat;
+  background: url('about-bg.png') repeat;
   background-size: cover;
 }
 
 /* Art */
 body.art {
-  background: url('images/art-bg.png') repeat;
+  background: url('art-bg.png') repeat;
   background-size: cover;
 }
 
 /* Music — tiled */
 body.music {
-  background: url('images/music-bg.png') repeat;
+  background: url('music-bg.png') repeat;
   background-size: auto;
 }
 
