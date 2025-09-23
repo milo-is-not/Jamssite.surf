@@ -1,17 +1,36 @@
-/* === Background === */
+/* === Backgrounds per page === */
 body {
-  background-color: #000000;
-  background-image: url('background.png');
-  background-repeat: repeat;
-  background-size: auto;
   color: #00ff00;
   font-family: "Comic Sans MS", cursive, sans-serif;
+  text-align: center;
   margin: 0;
   padding: 0;
-
   display: flex;
   justify-content: center;
   align-items: flex-start;
+}
+
+/* Home */
+body.home {
+  background: url('images/home-bg.png') repeat;
+}
+
+/* About */
+body.about {
+  background: url('images/about-bg.png') repeat;
+  background-size: cover;
+}
+
+/* Art */
+body.art {
+  background: url('images/art-bg.png') repeat;
+  background-size: cover;
+}
+
+/* Music — tiled */
+body.music {
+  background: url('images/music-bg.png') repeat;
+  background-size: auto;
 }
 
 /* === Title === */
@@ -29,7 +48,7 @@ h1 {
 .content {
   flex: 1;
   max-width: 900px;
-  margin: 0 220px; /* leave space for ads on both sides */
+  margin: 0 220px; /* space for ads */
 }
 
 /* === Navigation === */
@@ -61,7 +80,7 @@ h1 {
 }
 
 .nav img:hover {
-  transform: scale(1.2) rotate(-5deg); /* expands + rotates */
+  transform: scale(1.2) rotate(-5deg);
 }
 
 .nav span {
@@ -83,20 +102,14 @@ h1 {
   text-align: center;
   padding: 20px;
   border: 3px solid #f00;
-
   position: fixed;
   top: 100px;
 }
 
-.ad:first-of-type {
-  left: 0; /* left ad */
-}
+.ad:first-of-type { left: 0; }
+.ad:last-of-type { right: 0; }
 
-.ad:last-of-type {
-  right: 0; /* right ad */
-}
-
-/* === Art Page Project Box === */
+/* === Art Projects === */
 .project {
   border: 4px solid #00ff00;
   padding: 20px;
@@ -120,8 +133,7 @@ h1 {
 }
 
 .project .images img {
-  width: 150px;   /* thumbnails */
-  max-width: 100%; /* prevent blowing up */
+  width: 150px;
   height: auto;
   border: 2px solid #00ff00;
 }
