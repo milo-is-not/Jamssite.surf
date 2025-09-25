@@ -48,7 +48,7 @@ h1 {
 .content {
   flex: 1;
   max-width: 900px;
-  margin: 0 220px; /* space for ads */
+  margin: 0 220px; 
 }
 
 /* === Navigation === */
@@ -120,7 +120,7 @@ h1 {
 
   position: fixed;
   top: 100px;
-  z-index: 1000; /* keep them above content */
+  z-index: 1000;
 }
 
 .ad.left {
@@ -181,30 +181,32 @@ footer img {
 }
 /* === Lightbox === */
 .lightbox {
-  display: none; 
+  display: none;
   position: fixed;
-  z-index: 2000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.9);
+  inset: 0;
+  z-index: 9999;          
+  background: rgba(0,0,0,0.9);
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
 }
+.lightbox.open { display: flex; }
 
 .lightbox-content {
-  display: block;
-  max-width: 90%;
-  max-height: 90%;
-  margin: 5% auto;
+  max-width: 90vw;
+  max-height: 90vh;
   border: 4px solid #00ff00;
 }
 
 .lightbox .close {
   position: absolute;
-  top: 30px;
-  right: 50px;
+  top: 24px;
+  right: 32px;
   color: #00ff00;
   font-size: 48px;
   font-weight: bold;
   cursor: pointer;
+  background: transparent;
+  border: 0;
+  line-height: 1;
 }
