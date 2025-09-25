@@ -3,58 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <title>About Jam</title>
-  <link rel="icon" type="x-icon" href="favicon.ico">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="lightbox.js?v=1" defer></script>
 </head>
-  <!-- Lightbox -->
-<div id="lightbox" class="lightbox">
-  <span class="close">&times;</span>
-  <img class="lightbox-content" id="lightbox-img">
-</div>
-<script>
-  // Get elements
-  const lightbox = document.getElementById('lightbox');
-  const lightboxImg = document.getElementById('lightbox-img');
-  const closeBtn = document.querySelector('.lightbox .close');
-
-  document.querySelectorAll('img').forEach(img => {
-    img.addEventListener('click', () => {
-      lightbox.style.display = 'block';
-      lightboxImg.src = img.src;
-    });
-  });
-
-  // Close on click of "X"
-  closeBtn.addEventListener('click', () => {
-    lightbox.style.display = 'none';
-  });
-
-  // Close on outside click
-  lightbox.addEventListener('click', (e) => {
-    if (e.target === lightbox) {
-      lightbox.style.display = 'none';
-    }
-  });
-</script>
 <body class="about">
   <div class="ad left">🌟 Cool people in your area want to chat!</div>
 
   <div class="content">
     <h1>About Me</h1>
-    <p>
-      Hi, I’m James! I have not written this yet but I WILL so just wait there bud.
-    </p>
+    <p>Hi Im James AKA Milo Im currently a senior in high school I love working on cars, Im not the best at drawing but I try, Im a beginner in ceramics, 
+    and I make music!!! (music is coming soon i dont have all the equipment :( )</p>
 
-    <!-- Photos of me -->
     <div class="about-photos">
-      <img src="me1.png" alt="Photo 1 of Jam">
-      <img src="me2.png" alt="Photo 2 of Jam">
-      <img src="me3.png" alt="Photo 3 of Jam">
-      <img src="me4.png" alt="Photo 4 of Jam">
+      <img class="enlarge" src="me1.png" alt="Photo 1 of Jam">
+      <img class="enlarge" src="me2.png" alt="Photo 2 of Jam">
+      <img class="enlarge" src="me3.png" alt="Photo 3 of Jam">
+      <img class="enlarge" src="me4.png" alt="Photo 4 of Jam">
     </div>
 
     <footer>
-      <p><small>© 1999 Jam's Site — Best viewed in Netscape Navigator 4.0 or Internet Explorer 5.0 at 800x600 resolution.</small></p>
+      <p><small>© 1999 Jam's Site — Best viewed in Netscape Navigator 4.0 or IE5 at 800x600.</small></p>
       <p>
         <img src="https://www.w3.org/Icons/valid-html401" alt="Valid HTML 4.01">
         <img src="https://www.w3.org/Icons/valid-css" alt="Valid CSS">
@@ -64,5 +33,11 @@
   </div>
 
   <div class="ad right">🌟 Cool people in your area want to chat!</div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <button id="lightbox-close" class="close" aria-label="Close">×</button>
+    <img id="lightbox-img" class="lightbox-content" alt="">
+  </div>
 </body>
 </html>
