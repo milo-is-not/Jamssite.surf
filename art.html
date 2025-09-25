@@ -1,85 +1,52 @@
-
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
   <title>Jam's Art Work</title>
-   <link rel="icon" type="x-icon" href="favicon.ico">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="lightbox.js?v=1" defer></script>
 </head>
-  <!-- Lightbox -->
-<div id="lightbox" class="lightbox">
-  <span class="close">&times;</span>
-  <img class="lightbox-content" id="lightbox-img">
-</div>
-<script>
-  const lightbox = document.getElementById('lightbox');
-  const lightboxImg = document.getElementById('lightbox-img');
-  const closeBtn = document.querySelector('.lightbox .close');
-
-  // Attach click events to all images
-  document.querySelectorAll('img').forEach(img => {
-    img.addEventListener('click', () => {
-      lightbox.style.display = 'block';
-      lightboxImg.src = img.src;
-    });
-  });
-
-  // Close on click of "X"
-  closeBtn.addEventListener('click', () => {
-    lightbox.style.display = 'none';
-  });
-
-  // Close on outside click
-  lightbox.addEventListener('click', (e) => {
-    if (e.target === lightbox) {
-      lightbox.style.display = 'none';
-    }
-  });
-</script>
 <body class="art">
   <div class="ad left">🎨 Artists in your area want to share!</div>
 
   <div class="content">
     <h1>Jam's Art Work</h1>
 
-    <!-- Project 1 -->
     <div class="project">
       <h2>Gilberto</h2>
       <div class="images">
-        <img src="art1.png" alt="Artwork 1">
-        <img src="art2.png" alt="Artwork 2">
-        <img src="art3.png" alt="Artwork 3">
+        <img class="enlarge" src="art1.png" alt="Artwork 1">
+        <img class="enlarge" src="art2.png" alt="Artwork 2">
+        <img class="enlarge" src="art3.png" alt="Artwork 3">
       </div>
       <p class="description">This is Gilberto hes based off of a frog I used layerd fern glaze and he turned out like this hes a wonderful little man. 
         How I made him was by just grabing a chunk of clay and just thinking of a frog. my primary challenge was make it all even and I kinda just let the clay do its think in that sense.
-        the finished product is exactly what I wanted a dorky little pot. what im very proud of about this is color of the glaze and the way the eyes look like boba.
-      </p>
+        the finished product is exactly what I wanted a dorky little pot. what im very proud of about this is color of the glaze and the way the eyes look like boba.</p>
     </div>
 
-    <!-- Project 2 -->
     <div class="project">
-      <h2>Project Two</h2>
+      <h2>almost...</h2>
       <div class="images">
-        <img src="images/art4.png" alt="Artwork 4">
-        <img src="images/art5.png" alt="Artwork 5">
-        <img src="images/art6.png" alt="Artwork 6">
+        <img class="enlarge" src="images/art4.png" alt="Artwork 4">
+        <img class="enlarge" src="images/art5.png" alt="Artwork 5">
+        <img class="enlarge" src="images/art6.png" alt="Artwork 6">
       </div>
-      <p class="description">This is a description of Project Two.</p>
+      <p class="description">hold on there bud</p>
     </div>
 
-    <!-- Project 3 -->
     <div class="project">
-      <h2>Project Three</h2>
+      <h2>wait...</h2>
       <div class="images">
-        <img src="images/art7.png" alt="Artwork 7">
-        <img src="images/art8.png" alt="Artwork 8">
-        <img src="images/art9.png" alt="Artwork 9">
+        <img class="enlarge" src="images/art7.png" alt="Artwork 7">
+        <img class="enlarge" src="images/art8.png" alt="Artwork 8">
+        <img class="enlarge" src="images/art9.png" alt="Artwork 9">
       </div>
-      <p class="description">This is a description of Project Three.</p>
+      <p class="description">bro i said hold on</p>
     </div>
+
     <footer>
-      <p><small>© 1999 Jam's Site — Best viewed in Netscape Navigator 4.0 or Internet Explorer 5.0 at 800x600 resolution.</small></p>
+      <p><small>© 1999 Jam's Site — Best viewed in Netscape Navigator 4.0 or IE5 at 800x600.</small></p>
       <p>
         <img src="https://www.w3.org/Icons/valid-html401" alt="Valid HTML 4.01">
         <img src="https://www.w3.org/Icons/valid-css" alt="Valid CSS">
@@ -88,6 +55,12 @@
     </footer>
   </div>
 
- <div class="ad right">🎨 Artists in your area want to share!</div>
+  <div class="ad right">🎨 Artists in your area want to share!</div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <button id="lightbox-close" class="close" aria-label="Close">×</button>
+    <img id="lightbox-img" class="lightbox-content" alt="">
+  </div>
 </body>
 </html>
